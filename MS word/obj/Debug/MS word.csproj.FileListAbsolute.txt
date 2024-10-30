@@ -1,0 +1,10 @@
+G:\levle3-lab\C#-project\MS word\MS word\bin\Debug\MS word.exe.config
+G:\levle3-lab\C#-project\MS word\MS word\bin\Debug\MS word.exe
+G:\levle3-lab\C#-project\MS word\MS word\bin\Debug\MS word.pdb
+G:\levle3-lab\C#-project\MS word\MS word\obj\Debug\MS word.csproj.AssemblyReference.cache
+G:\levle3-lab\C#-project\MS word\MS word\obj\Debug\MS_word.Form1.resources
+G:\levle3-lab\C#-project\MS word\MS word\obj\Debug\MS_word.Properties.Resources.resources
+G:\levle3-lab\C#-project\MS word\MS word\obj\Debug\MS word.csproj.GenerateResource.cache
+G:\levle3-lab\C#-project\MS word\MS word\obj\Debug\MS word.csproj.CoreCompileInputs.cache
+G:\levle3-lab\C#-project\MS word\MS word\obj\Debug\MS word.exe
+G:\levle3-lab\C#-project\MS word\MS word\obj\Debug\MS word.pdb
