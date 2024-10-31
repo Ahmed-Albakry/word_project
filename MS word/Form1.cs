@@ -217,5 +217,41 @@ namespace MS_word
             string font = comp_font.SelectedItem.ToString();
             richTextBox1.SelectionFont = new Font (font , richTextBox1.SelectionFont.Size);
         }
+
+        private void cutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.SelectedText.Length > 0)
+            {
+                richTextBox1.Cut();
+            }
+        }
+
+        private void copyToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.SelectedText.Length > 0)
+            {
+                richTextBox1.Copy();
+            }
+        }
+
+        private void pasteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.SelectedText.Length > 0)
+            {
+                richTextBox1.Paste();
+            }
+            richTextBox1.Paste();
+        }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            ColorDialog cdialog = new ColorDialog();
+            DialogResult dr = cdialog.ShowDialog();
+
+            if (dr == DialogResult.OK)
+            {
+                richTextBox1.SelectionBackColor = cdialog.Color;
+            }
+        }
     }
 }

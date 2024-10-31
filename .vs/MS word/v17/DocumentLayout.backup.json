@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "G:\\levle3-lab\\C#-project\\MS word\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73C30626-3BFD-430F-8EC5-EC9C55D9CBBC}|MS word\\MS word.csproj|G:\\levle3-lab\\C#-project\\MS word\\ms word\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{73C30626-3BFD-430F-8EC5-EC9C55D9CBBC}|MS word\\MS word.csproj|g:\\levle3-lab\\c#-project\\ms word\\ms word\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{73C30626-3BFD-430F-8EC5-EC9C55D9CBBC}|MS word\\MS word.csproj|solutionrelative:ms word\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73C30626-3BFD-430F-8EC5-EC9C55D9CBBC}|MS word\\MS word.csproj|g:\\levle3-lab\\c#-project\\ms word\\ms word\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{73C30626-3BFD-430F-8EC5-EC9C55D9CBBC}|MS word\\MS word.csproj|G:\\levle3-lab\\C#-project\\MS word\\ms word\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73C30626-3BFD-430F-8EC5-EC9C55D9CBBC}|MS word\\MS word.csproj|solutionrelative:ms word\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "MS word\\Form1.cs",
               "ToolTip": "G:\\levle3-lab\\C#-project\\MS word\\MS word\\Form1.cs*",
               "RelativeToolTip": "MS word\\Form1.cs*",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAABcAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAMwPwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T08:07:10.922Z",
               "EditorCaption": ""
