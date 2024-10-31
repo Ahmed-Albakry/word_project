@@ -62,6 +62,10 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.comp_font = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
@@ -71,23 +75,19 @@
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.btn_underline = new System.Windows.Forms.ToolStripButton();
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
+            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.btn_aln_left = new System.Windows.Forms.ToolStripButton();
             this.btn_alinconter = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.cutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.panel2 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -347,6 +347,37 @@
             this.richTextBox1.Size = new System.Drawing.Size(903, 417);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cutToolStripMenuItem1,
+            this.copyToolStripMenuItem1,
+            this.pasteToolStripMenuItem1});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(103, 70);
+            // 
+            // cutToolStripMenuItem1
+            // 
+            this.cutToolStripMenuItem1.Name = "cutToolStripMenuItem1";
+            this.cutToolStripMenuItem1.Size = new System.Drawing.Size(102, 22);
+            this.cutToolStripMenuItem1.Text = "cut";
+            this.cutToolStripMenuItem1.Click += new System.EventHandler(this.cutToolStripMenuItem1_Click);
+            // 
+            // copyToolStripMenuItem1
+            // 
+            this.copyToolStripMenuItem1.Name = "copyToolStripMenuItem1";
+            this.copyToolStripMenuItem1.Size = new System.Drawing.Size(102, 22);
+            this.copyToolStripMenuItem1.Text = "copy";
+            this.copyToolStripMenuItem1.Click += new System.EventHandler(this.copyToolStripMenuItem1_Click);
+            // 
+            // pasteToolStripMenuItem1
+            // 
+            this.pasteToolStripMenuItem1.Name = "pasteToolStripMenuItem1";
+            this.pasteToolStripMenuItem1.Size = new System.Drawing.Size(102, 22);
+            this.pasteToolStripMenuItem1.Text = "Paste";
+            this.pasteToolStripMenuItem1.Click += new System.EventHandler(this.pasteToolStripMenuItem1_Click);
             // 
             // toolStrip1
             // 
@@ -378,7 +409,7 @@
             this.comp_font.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.comp_font.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comp_font.Name = "comp_font";
-            this.comp_font.Size = new System.Drawing.Size(121, 25);
+            this.comp_font.Size = new System.Drawing.Size(121, 26);
             this.comp_font.ToolTipText = "نوع  الخط ";
             this.comp_font.SelectedIndexChanged += new System.EventHandler(this.comp_font_SelectedIndexChanged);
             // 
@@ -388,7 +419,7 @@
             this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton5.Size = new System.Drawing.Size(23, 23);
             this.toolStripButton5.Text = "toolStripButton5";
             this.toolStripButton5.ToolTipText = "تكبير حجم النص ";
             this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
@@ -399,7 +430,7 @@
             this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton4.Size = new System.Drawing.Size(23, 23);
             this.toolStripButton4.Text = "toolStripButton4";
             this.toolStripButton4.ToolTipText = "تصغير حجم النص ";
             this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
@@ -418,7 +449,7 @@
             "22",
             "24"});
             this.comb_fontsize.Name = "comb_fontsize";
-            this.comb_fontsize.Size = new System.Drawing.Size(75, 25);
+            this.comb_fontsize.Size = new System.Drawing.Size(75, 26);
             this.comb_fontsize.Text = "9";
             this.comb_fontsize.ToolTipText = "حجم النص ";
             this.comb_fontsize.SelectedIndexChanged += new System.EventHandler(this.comb_fontsize_SelectedIndexChanged);
@@ -430,7 +461,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 23);
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.ToolTipText = "قم بتغميق النص ";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
@@ -441,7 +472,7 @@
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 23);
             this.toolStripButton2.Text = "toolStripButton2";
             this.toolStripButton2.ToolTipText = "تطبيق النص المائل على النص ";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
@@ -452,7 +483,7 @@
             this.btn_underline.Image = ((System.Drawing.Image)(resources.GetObject("btn_underline.Image")));
             this.btn_underline.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_underline.Name = "btn_underline";
-            this.btn_underline.Size = new System.Drawing.Size(23, 22);
+            this.btn_underline.Size = new System.Drawing.Size(23, 23);
             this.btn_underline.Text = "toolStripButton3";
             this.btn_underline.ToolTipText = "تسطير النص ";
             this.btn_underline.Click += new System.EventHandler(this.btn_underline_Click);
@@ -463,88 +494,10 @@
             this.toolStripSplitButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton1.Image")));
             this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton1.Name = "toolStripSplitButton1";
-            this.toolStripSplitButton1.Size = new System.Drawing.Size(32, 22);
+            this.toolStripSplitButton1.Size = new System.Drawing.Size(32, 23);
             this.toolStripSplitButton1.Text = "toolStripSplitButton1";
             this.toolStripSplitButton1.ToolTipText = "تغيير لون الخط";
             this.toolStripSplitButton1.ButtonClick += new System.EventHandler(this.toolStripSplitButton1_ButtonClick);
-            // 
-            // btn_aln_left
-            // 
-            this.btn_aln_left.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_aln_left.Image = ((System.Drawing.Image)(resources.GetObject("btn_aln_left.Image")));
-            this.btn_aln_left.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_aln_left.Name = "btn_aln_left";
-            this.btn_aln_left.Size = new System.Drawing.Size(23, 22);
-            this.btn_aln_left.Text = "toolStripButton3";
-            this.btn_aln_left.ToolTipText = "محاذاة الى اليسار";
-            this.btn_aln_left.Click += new System.EventHandler(this.btn_aln_left_Click);
-            // 
-            // btn_alinconter
-            // 
-            this.btn_alinconter.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_alinconter.Image = ((System.Drawing.Image)(resources.GetObject("btn_alinconter.Image")));
-            this.btn_alinconter.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_alinconter.Name = "btn_alinconter";
-            this.btn_alinconter.Size = new System.Drawing.Size(23, 22);
-            this.btn_alinconter.Text = "toolStripButton6";
-            this.btn_alinconter.ToolTipText = "محاذاة الى المنتصف ";
-            this.btn_alinconter.Click += new System.EventHandler(this.btn_alinconter_Click);
-            // 
-            // toolStripButton7
-            // 
-            this.toolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
-            this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton7.Name = "toolStripButton7";
-            this.toolStripButton7.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton7.Text = "toolStripButton7";
-            this.toolStripButton7.ToolTipText = "محاذاه النص الى اليمين";
-            this.toolStripButton7.Click += new System.EventHandler(this.toolStripButton7_Click);
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton3.Text = "toolStripButton3";
-            this.toolStripButton3.ToolTipText = "اضافة صورة";
-            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
-            // 
-            // ofd
-            // 
-            this.ofd.FileName = "openFileDialog1";
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cutToolStripMenuItem1,
-            this.copyToolStripMenuItem1,
-            this.pasteToolStripMenuItem1});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(103, 70);
-            // 
-            // cutToolStripMenuItem1
-            // 
-            this.cutToolStripMenuItem1.Name = "cutToolStripMenuItem1";
-            this.cutToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.cutToolStripMenuItem1.Text = "cut";
-            this.cutToolStripMenuItem1.Click += new System.EventHandler(this.cutToolStripMenuItem1_Click);
-            // 
-            // copyToolStripMenuItem1
-            // 
-            this.copyToolStripMenuItem1.Name = "copyToolStripMenuItem1";
-            this.copyToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.copyToolStripMenuItem1.Text = "copy";
-            this.copyToolStripMenuItem1.Click += new System.EventHandler(this.copyToolStripMenuItem1_Click);
-            // 
-            // pasteToolStripMenuItem1
-            // 
-            this.pasteToolStripMenuItem1.Name = "pasteToolStripMenuItem1";
-            this.pasteToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.pasteToolStripMenuItem1.Text = "Paste";
-            this.pasteToolStripMenuItem1.Click += new System.EventHandler(this.pasteToolStripMenuItem1_Click);
             // 
             // toolStripButton6
             // 
@@ -560,7 +513,55 @@
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 26);
+            // 
+            // btn_aln_left
+            // 
+            this.btn_aln_left.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_aln_left.Image = ((System.Drawing.Image)(resources.GetObject("btn_aln_left.Image")));
+            this.btn_aln_left.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_aln_left.Name = "btn_aln_left";
+            this.btn_aln_left.Size = new System.Drawing.Size(23, 23);
+            this.btn_aln_left.Text = "toolStripButton3";
+            this.btn_aln_left.ToolTipText = "محاذاة الى اليسار";
+            this.btn_aln_left.Click += new System.EventHandler(this.btn_aln_left_Click);
+            // 
+            // btn_alinconter
+            // 
+            this.btn_alinconter.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_alinconter.Image = ((System.Drawing.Image)(resources.GetObject("btn_alinconter.Image")));
+            this.btn_alinconter.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_alinconter.Name = "btn_alinconter";
+            this.btn_alinconter.Size = new System.Drawing.Size(23, 23);
+            this.btn_alinconter.Text = "toolStripButton6";
+            this.btn_alinconter.ToolTipText = "محاذاة الى المنتصف ";
+            this.btn_alinconter.Click += new System.EventHandler(this.btn_alinconter_Click);
+            // 
+            // toolStripButton7
+            // 
+            this.toolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
+            this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton7.Name = "toolStripButton7";
+            this.toolStripButton7.Size = new System.Drawing.Size(23, 23);
+            this.toolStripButton7.Text = "toolStripButton7";
+            this.toolStripButton7.ToolTipText = "محاذاه النص الى اليمين";
+            this.toolStripButton7.Click += new System.EventHandler(this.toolStripButton7_Click);
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(23, 23);
+            this.toolStripButton3.Text = "toolStripButton3";
+            this.toolStripButton3.ToolTipText = "اضافة صورة";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
+            // 
+            // ofd
+            // 
+            this.ofd.FileName = "openFileDialog1";
             // 
             // panel2
             // 
@@ -588,9 +589,9 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

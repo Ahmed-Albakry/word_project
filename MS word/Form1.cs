@@ -253,5 +253,29 @@ namespace MS_word
                 richTextBox1.SelectionBackColor = cdialog.Color;
             }
         }
+
+        private bool isarabic(char c)
+        {
+            return (c >= '\u0600' && c <= '\u06FF') || (c >= '\u0750' && c <= '\u077F');
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text.Length > 0)
+            {
+                char firstchar = richTextBox1.Text[0];
+                if (isarabic(firstchar))
+                {
+                    richTextBox1.RightToLeft = RightToLeft.Yes;
+                    richTextBox1.SelectionAlignment = HorizontalAlignment.Right;
+
+                }
+                else
+                {
+                    richTextBox1.RightToLeft = RightToLeft.No;
+                    richTextBox1.SelectionAlignment = HorizontalAlignment.Left;
+                }
+            }
+        }
     }
 }
